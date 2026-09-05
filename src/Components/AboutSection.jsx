@@ -24,7 +24,7 @@ function AboutMe() {
             <a href="#contact" className="cosmic-button">
                 Get In Touch
             </a>
-            <a href="/Sayem_FrontEnd.pdf" download className={cn("px-6 py-2 rounded-full border border-primary text-primary",
+            <a href="/Sayem_FullStack.pdf" download className={cn("px-6 py-2 rounded-full border border-primary text-primary",
               "hover:bg-primary/10 transition-colors duration-300"
             )}> 
               Download CV
