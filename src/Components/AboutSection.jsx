@@ -12,13 +12,13 @@ function AboutMe() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Front-End Web Developer & Creative Tech Enthusiast</h3>
+            <h3 className="text-2xl font-semibold">Full Stack Web Developer & Creative Tech Enthusiast</h3>
             <p className="text-muted-foreground">
-              I'm a passionate frontend web developer focused on building clean, responsive, and user-friendly web applications.I work mainly with React and modern frontend tools, and enjoy turning ideas into real, functional products through thoughtful UI development.
+              I'm a passionate MERN Stack Developer focused on building clean, responsive, and user-friendly web applications. I enjoy turning ideas into real, functional products using technologies like React, Node.js, Express, and MongoDB.
             </p>
 
             <p className="text-muted-foreground">
-              I love combining clean UI design, smooth animations, and performance-focused code to create engaging digital experiences.I also have experience integrating frontend applications with backend APIs, and I'm constantly learning, improving my skills, and exploring new tools to grow as a developer and deliver better solutions with every project.
+              I love combining clean UI design, smooth animations, and well-structured code to create engaging web experiences. I also have experience integrating frontend applications with backend APIs and working with databases to build complete web applications. I'm always learning, improving my skills, and exploring new technologies to become a better developer and create better solutions with every project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
             <a href="#contact" className="cosmic-button">
@@ -39,7 +39,7 @@ function AboutMe() {
                     <Code className="h-6 w-6 text-primary" />
                   </div>
                   <div className="text-left">
-                      <h4 className="font-semibold text-lg">Front-End Web Development</h4>
+                      <h4 className="font-semibold text-lg">Web Development</h4>
                       <p className="text-muted-foreground">Creating responsive websites and web application with modern web technologies.</p>
                   </div>
           

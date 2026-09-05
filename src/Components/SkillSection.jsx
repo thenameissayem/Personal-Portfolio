@@ -6,18 +6,32 @@ const skills = [
   { name: "JavaScript", level: 80, category: "frontend" },
   { name: "React", level: 70, category: "frontend" },
   { name: "Tailwind CSS", level: 80, category: "frontend" },
+  { name: "JQuery", level: 50, category: "frontend" },
+
+  { name: "Node.js", level: 80, category: "backend" },
+
+  { name: "Express.js", level: 90, category: "backend" },
+  { name: "Php", level: 50, category: "backend" },
+
+  { name: "MongoDB", level: 70, category: "backend" },
+  { name: "MySql", level: 70, category: "backend" },
+
+  { name: "REST APIs", level: 75, category: "backend" },
+  { name: "AJAX", level: 70, category: "backend" },
+
 
   { name: "Git/GitHub", level: 90, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
+  { name: "Postman", level: 90, category: "tools" },
 ];
 
-const categories = ["all" , "frontend", "tools"]
+const categories = ["all", "frontend", "backend", "tools"]
 
 function SkillSection() {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filterdSkills = skills.filter(
-    (skill) => activeCategory  === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory
   );
 
   return (
@@ -28,29 +42,29 @@ function SkillSection() {
         </h2>
 
         <div className='flex flex-wrap justify-center gap-4 mb-12'>
-          {categories.map((category, key)=>(
+          {categories.map((category, key) => (
             <button className={cn('px-5 py-2 rounded-full transition-colors duration-300',
               "capitalize",
               activeCategory === category ? "bg-primary text-primary-foreground" :
-              "bg-secondary/70 text-foreground hover:bd-secondary"
-            )} key={key} onClick={()=>setActiveCategory(category)}>{category}</button>
+                "bg-secondary/70 text-foreground hover:bd-secondary"
+            )} key={key} onClick={() => setActiveCategory(category)}>{category}</button>
           ))}
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {filterdSkills.map((skill,key)=>(
-              <div key={key} className='bg-card p-6 rounded-lg shadow-xs card-hover'>
-                <div className='text-left mb-4'>
-                  <h3 className='font-semibold text-lg'>{skill.name}</h3>
-                </div>
-                <div className='w-full bg-secondary/50 h-2 rounded-full overflow-hidden'>
-                  <div className='bg-primary h-2 rounded-full origin-left animate-[grow_1.5_ease-out' style={{width:skill.level + "%"}}/>
-                </div>
-                <div className='text-right mt-1'>
-                  <span className='text-sm text-muted-foreground'>{skill.level}%</span>
-                </div>
+          {filterdSkills.map((skill, key) => (
+            <div key={key} className='bg-card p-6 rounded-lg shadow-xs card-hover'>
+              <div className='text-left mb-4'>
+                <h3 className='font-semibold text-lg'>{skill.name}</h3>
               </div>
-            ))}
+              <div className='w-full bg-secondary/50 h-2 rounded-full overflow-hidden'>
+                <div className='bg-primary h-2 rounded-full origin-left animate-[grow_1.5_ease-out' style={{ width: skill.level + "%" }} />
+              </div>
+              <div className='text-right mt-1'>
+                <span className='text-sm text-muted-foreground'>{skill.level}%</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

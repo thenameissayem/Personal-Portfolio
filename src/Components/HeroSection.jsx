@@ -16,7 +16,7 @@ function HeroSection() {
                     </span>
                 </h1>
                   <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3'
-                  >Frontend developer passionate about building responsive, user-friendly web interfaces with clean UI and smooth animations. Experienced in integrating frontend applications with backend APIs.</p>
+                  >I'm a MERN Stack Developer passionate about creating responsive and easy-to-use web applications. I enjoy working on clean UI, adding smooth interactions, and connecting frontend applications with backend APIs to turn ideas into fully functional web experiences.</p>
               <div className='pt-4 opacity-0 animate-fade-in-delay-4'>
                 <a href="#projects" className='cosmic-button'>
                   View My Work
